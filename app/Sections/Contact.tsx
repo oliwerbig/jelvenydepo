@@ -5,9 +5,12 @@ import ContactForm from "../ContactForm";
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-slate-100 py-16 dark:bg-gray-900">
-      <div className="mx-auto flex max-w-7xl flex-row flex-wrap items-start justify-center gap-6">
-        <div className="flex grow basis-[20rem] flex-col gap-6">
+    <section
+      id="contact"
+      className="bg-slate-100 py-12 px-8 dark:bg-gray-900 lg:py-16 lg:px-20"
+    >
+      <div className="mx-auto flex max-w-7xl flex-row flex-wrap items-start justify-center gap-6 ">
+        <div className="flex basis-[40rem] flex-col gap-6 lg:basis-[30rem]">
           <div className="flex flex-row items-center rounded-lg bg-gray-50 shadow dark:border-gray-700 dark:bg-gray-800">
             <div className="relative aspect-square basis-[15rem]">
               <Image src="/media/tibi.jpg" alt="Tibi" fill />
@@ -20,16 +23,14 @@ const Contact = () => {
                 Ügyvezető
               </span>
               <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Többszöri exatlonos, mindig segítőkész. <br />Ő vezeti a céget.
+                Többszöri triatlonos, mindig segítőkész. <br />Ő vezeti a céget.
               </p>
             </div>
           </div>
 
           <div className="flex flex-row items-center rounded-lg bg-gray-50 shadow dark:border-gray-700 dark:bg-gray-800">
-            <div className="p-5">
-              <div className="relative aspect-square basis-[15rem]">
-                <Image src="/logo-01.svg" alt="logo" fill />
-              </div>
+            <div className="relative m-4 aspect-square basis-[15rem]">
+              <Image src="/logo-01.svg" alt="logo" fill />
             </div>
             <div className="p-5">
               <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -54,15 +55,19 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="basis-[40rem] rounded-xl bg-white py-8 px-4 lg:py-16">
-          <h2 className="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-            Kérdezz tőlünk!
-          </h2>
-          <p className="mb-8 text-center font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16">
-            Kérdésed támadt termékeinkkel, árainkkal vagy gyártási
-            folyamatunkkal kapcsolatban? Ne félj feltenni!
-          </p>
-          <ContactForm />
+        <div className="basis-[40rem] lg:basis-[30rem] ">
+          <div className="my-12 xl:my-4">
+            <h2 className="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+              Kérdezz tőlünk!
+            </h2>
+            <p className="text-center text-xl font-light text-gray-500 dark:text-gray-400">
+              Kérdésed támadt termékeinkkel, árainkkal vagy gyártási
+              folyamatunkkal kapcsolatban? Ne félj feltenni!
+            </p>
+          </div>
+          <div className="rounded-xl bg-white py-4 px-4">
+            <ContactForm />
+          </div>
         </div>
       </div>
     </section>

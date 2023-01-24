@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import OrderForm from "../OrderForm";
 
 const Order = () => {
@@ -65,8 +65,21 @@ const Order = () => {
               </a>
             </div>
           </div>
-          <div className="mt-16 w-[100%] rounded py-8 lg:mt-8">
-            <OrderForm />
+          <div className="m-8 flex basis-full flex-col items-center justify-center lg:mt-32">
+            <div className="w-full rounded-lg bg-white shadow dark:border dark:border-gray-700 dark:bg-gray-800 sm:max-w-md md:mt-0 xl:p-0">
+              <div className="space-y-4 p-6 sm:p-8 md:space-y-6">
+                <OrderForm />
+              </div>
+            </div>
+            <a
+              href="#"
+              className="dark:text-dark mb-6 flex items-center text-lg font-semibold text-white"
+            >
+              By{" "}
+              <div className="relative m-2 ml-0 aspect-[4/1] w-[10rem]">
+                <Image src="/logo-05.svg" alt="logo" fill />
+              </div>
+            </a>
           </div>
         </div>
       </div>

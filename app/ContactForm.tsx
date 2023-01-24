@@ -1,8 +1,12 @@
 import React from "react";
 
-const ContactForm = () => {
+const ContactForm = (props: React.PropsWithChildren<any>) => {
   return (
-    <form action="#" className="space-y-8">
+    <form
+      action="#"
+      className={`space-y-8 ${props.className ?? ""}`}
+      {...props}
+    >
       <div>
         <label
           htmlFor="email"

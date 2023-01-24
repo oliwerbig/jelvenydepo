@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className="isolate bg-white">
-      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
           viewBox="0 0 1155 678"
@@ -28,10 +28,13 @@ export default function Hero() {
           </defs>
         </svg>
       </div>
-      <section className=" dark:bg-gray-900" id="hero">
-        <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
-          <div className="mr-auto place-self-center lg:col-span-7">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-start">
+      <section
+        className="py-12 px-8 shadow-xl shadow-slate-300 dark:bg-gray-900 lg:py-16 lg:px-20"
+        id="hero"
+      >
+        <div className="mx-auto grid max-w-7xl grid-cols-12">
+          <div className="col-span-12 lg:col-span-7">
+            <div className="hidden lg:mb-8 lg:flex lg:justify-start">
               <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 <span className="flex items-center justify-center gap-2 text-gray-600">
                   <div className="h-[1rem] w-[1.5rem] rounded bg-[linear-gradient(180deg,_#C8102E_33.333%,_#FFF_33.333%_66.666%,_#00843E_66.666%)]"></div>

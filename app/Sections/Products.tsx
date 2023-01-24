@@ -3,21 +3,20 @@ import React from "react";
 
 const Products = () => {
   return (
-    <section
-      id="products"
-      className="relative bg-slate-100 bg-opacity-90 dark:bg-gray-900"
-    >
-      <div className="absolute -z-10 h-[100%] w-[100%]">
-        <Image
-          src="/media/jelvenydepo/7.webp"
-          alt=""
-          fill
-          style={{
-            objectFit: "cover",
-          }}
-        />
+    <section id="products" className="bg-white bg-opacity-90 dark:bg-gray-900">
+      <div className="relative -z-10 h-full w-full">
+        <div className="absolute h-[100vh] w-[100vw]">
+          <Image
+            src="/media/jelvenydepo/7.webp"
+            alt=""
+            fill
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </div>
       </div>
-      <div className="mx-auto max-w-screen-xl items-center gap-16 py-8 px-4 lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+      <div className="mx-auto max-w-7xl items-center gap-16 py-12 px-8 lg:py-16 lg:px-20 xl:grid xl:grid-cols-2">
         <div className="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             Mivel szolgálhatunk?
@@ -65,13 +64,13 @@ const Products = () => {
           <div className="flex flex-col space-y-4 pt-20 sm:flex-row sm:space-y-0 sm:space-x-4">
             <a
               href="#order"
-              className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-4 py-1 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+              className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-4 py-2.5 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
               Rendelés
             </a>
             <a
               href="#prices"
-              className="inline-flex items-center justify-center rounded-lg border border-gray-300 px-4 py-1 text-center text-base font-medium text-gray-900 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center justify-center rounded-lg border border-gray-300 px-4 py-2.5 text-center text-base font-medium text-gray-900 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             >
               Árlista
             </a>

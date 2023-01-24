@@ -2,14 +2,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-100 p-16 dark:bg-gray-800">
+    <footer className="bg-slate-100 py-12 px-8 dark:bg-gray-800 lg:py-16 lg:px-20">
       <div className="mx-auto max-w-screen-xl">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
+          <div className="mb-6 hidden md:mb-0 lg:block">
             <a href="/" className="flex items-center">
               <img
-                src="/logo-01.svg"
-                className="mr-3 h-[150px]"
+                src="/logo-05.svg"
+                className="mr-3 h-[5rem]"
                 alt="Jelvénydepo Logo"
               />
             </a>

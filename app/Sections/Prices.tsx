@@ -2,8 +2,8 @@ import React from "react";
 
 const Prices = () => {
   return (
-    <section id="prices" className="bg-white py-16">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center py-8 px-6">
+    <section id="prices" className="bg-white py-12 px-8 lg:py-16 lg:px-20">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center">
         <h2 className="mb-4 w-fit text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Árlista
         </h2>
