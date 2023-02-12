@@ -1,10 +1,29 @@
+"use client";
+
 import Image from "next/image";
+import { useParallax } from "react-scroll-parallax";
 import OrderForm from "../OrderForm";
 
 const Order = () => {
+  const parallax = useParallax({
+    speed: -1000,
+  });
+
   return (
-    <section id="order" className="bg-slate-100 py-8 px-6">
-      <div className="mx-auto max-w-7xl ">
+    <section id="order" className="bg-slate-100 bg-opacity-50">
+      <div ref={parallax.ref} className="relative -z-10 h-full w-full">
+        <div className="absolute mt-[-50vh] h-[110vh] w-[100vw]">
+          <Image
+            src="/media/jelvenydepo/7.webp"
+            alt=""
+            fill
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </div>
+      </div>
+      <div className="mx-auto max-w-7xl py-8 px-6">
         <div className="relative isolate overflow-hidden rounded-3xl bg-gray-900 px-6 pt-16 shadow-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,6 +81,9 @@ const Order = () => {
                 className="text-base font-semibold leading-7 text-white"
               >
                 Termékeink
+              </a>
+              <a href="#contact" className="text-base leading-7 text-white">
+                Csak kérdésed van?
               </a>
             </div>
           </div>

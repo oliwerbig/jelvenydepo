@@ -2,7 +2,7 @@ import React from "react";
 
 const Prices = () => {
   return (
-    <section id="prices" className="bg-white py-12 px-8 lg:py-16 lg:px-20">
+    <section id="prices" className="bg-slate-100 py-12 px-8 lg:py-16 lg:px-20">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-center">
         <h2 className="mb-4 w-fit text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Árlista
@@ -242,10 +242,10 @@ const Prices = () => {
             Rendelés
           </a>
           <a
-            href="#products"
+            href="#contact"
             className="inline-flex items-center justify-center rounded-lg border border-gray-300 px-4 py-2.5 text-center text-base font-medium text-gray-900 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           >
-            Termékeink
+            Kérdésed van?
           </a>
         </div>
       </div>

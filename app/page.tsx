@@ -1,4 +1,4 @@
-import { Comfortaa } from "@next/font/google";
+import { Comfortaa, Inter } from "@next/font/google";
 import { Providers } from "./providers";
 import About from "./Sections/About";
 import Contact from "./Sections/Contact";
@@ -8,20 +8,15 @@ import Order from "./Sections/Order";
 import Prices from "./Sections/Prices";
 import Products from "./Sections/Products";
 
-const comfortaa = Comfortaa({ subsets: ["latin-ext"] });
-
 export default function Home() {
   return (
     <Providers>
-      <main className={`${comfortaa.className}`}>
-        <Hero />
-        <Products />
-        <About />
-        <Prices />
-        <Order />
-        <Contact />
-        <CTA2 />
-      </main>
+      <Hero />
+      <Products />
+      <About />
+      <Prices />
+      <Order />
+      <Contact />
     </Providers>
   );
 }

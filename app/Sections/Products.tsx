@@ -3,7 +3,10 @@ import React from "react";
 
 const Products = () => {
   return (
-    <section id="products" className="bg-white bg-opacity-90 dark:bg-gray-900">
+    <section
+      id="products"
+      className="bg-slate-100 bg-opacity-100 dark:bg-gray-900"
+    >
       <div className="relative -z-10 h-full w-full">
         <div className="absolute h-[100vh] w-[100vw]">
           <Image
@@ -49,7 +52,7 @@ const Products = () => {
             </span>
             <br />
             <br />
-            Téglalp kitűzőalapok elérhetőek:
+            Téglalap kitűzőalapok elérhetőek:
             <br />
             <span className="mr-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
               40x28mm
@@ -76,7 +79,7 @@ const Products = () => {
             </a>
           </div>
         </div>
-        <div className="mt-8 grid grid-cols-3 gap-4">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
           <figure className="cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
             <div className="relative h-56 w-full">
               <Image
@@ -89,7 +92,7 @@ const Products = () => {
                 }}
               />
             </div>
-            <figcaption className="absolute bottom-6 px-4 text-lg text-white">
+            <figcaption className="text-md absolute bottom-6 w-full px-4 text-center text-white">
               <p>Présszerszámok</p>
             </figcaption>
           </figure>
@@ -116,7 +119,7 @@ const Products = () => {
                 }}
               />
             </div>
-            <figcaption className="absolute bottom-6 px-4 text-lg text-white">
+            <figcaption className="text-md absolute bottom-6 w-full px-4 text-center text-white">
               <p>Présgépek</p>
             </figcaption>
           </figure>
@@ -132,7 +135,7 @@ const Products = () => {
             />
           </div>
           <figure className="cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
-            <div className="relative -mt-16 h-56 w-full">
+            <div className="relative h-56 w-full sm:-mt-16">
               <Image
                 className="rounded-lg"
                 src="/media/jelvenydepo/8.webp"
@@ -143,7 +146,7 @@ const Products = () => {
                 }}
               />
             </div>
-            <figcaption className="absolute bottom-6 px-4 text-lg text-white">
+            <figcaption className="text-md absolute bottom-6 w-full px-4 text-center text-white">
               <p>Alkatrészek</p>
             </figcaption>
           </figure>

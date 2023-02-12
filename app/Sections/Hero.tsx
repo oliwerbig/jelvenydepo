@@ -29,7 +29,7 @@ export default function Hero() {
         </svg>
       </div>
       <section
-        className="py-12 px-8 shadow-xl shadow-slate-300 dark:bg-gray-900 lg:py-16 lg:px-20"
+        className="py-12 px-8 shadow-xl shadow-gray-200 dark:bg-gray-900 lg:py-16 lg:px-20"
         id="hero"
       >
         <div className="mx-auto grid max-w-7xl grid-cols-12">
