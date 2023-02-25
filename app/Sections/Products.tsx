@@ -1,22 +1,35 @@
+"use client";
+
+import { Carousel } from "flowbite-react";
 import Image from "next/image";
 import React from "react";
+import { useParallax } from "react-scroll-parallax";
 
 const Products = () => {
+  const parallax = useParallax({
+    speed: -1000,
+  });
+
   return (
     <section
       id="products"
-      className="bg-slate-100 bg-opacity-100 dark:bg-gray-900"
+      className="bg-slate-100 bg-opacity-80 dark:bg-gray-900"
     >
-      <div className="relative -z-10 h-full w-full">
-        <div className="absolute h-[100vh] w-[100vw]">
-          <Image
-            src="/media/jelvenydepo/7.webp"
-            alt=""
-            fill
-            style={{
-              objectFit: "cover",
-            }}
-          />
+      <div
+        ref={parallax.ref as React.RefObject<HTMLDivElement>}
+        className="relative -z-10 h-full w-full"
+      >
+        <div className="absolute mt-[-50vh] h-[120vh] w-[100vw]">
+          <video
+            className="h-full w-full"
+            controls
+            autoPlay
+            muted
+            preload="auto"
+            loop
+          >
+            <source src="/media/jelvenydepo/muhely_cut.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
       <div className="mx-auto max-w-7xl items-center gap-16 py-12 px-8 lg:py-16 lg:px-20 xl:grid xl:grid-cols-2">
@@ -79,9 +92,9 @@ const Products = () => {
             </a>
           </div>
         </div>
-        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <Carousel>
           <figure className="cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
-            <div className="relative h-56 w-full">
+            <div className="relative h-96 w-full">
               <Image
                 className="rounded-lg"
                 src="/media/jelvenydepo/10.webp"
@@ -96,7 +109,7 @@ const Products = () => {
               <p>Présszerszámok</p>
             </figcaption>
           </figure>
-          <div className="relative h-40 w-full cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
+          <div className="relative h-96 w-full cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
             <Image
               className="rounded-lg"
               src="/media/jelvenydepo/11.webp"
@@ -108,7 +121,7 @@ const Products = () => {
             />
           </div>
           <figure className="cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
-            <div className="relative h-56 w-full">
+            <div className="relative h-96 w-full">
               <Image
                 className="rounded-lg"
                 src="/media/jelvenydepo/6.webp"
@@ -123,7 +136,7 @@ const Products = () => {
               <p>Présgépek</p>
             </figcaption>
           </figure>
-          <div className="relative h-40 w-full cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
+          <div className="relative h-96 w-full cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
             <Image
               className="rounded-lg"
               src="/media/jelvenydepo/7.webp"
@@ -135,7 +148,7 @@ const Products = () => {
             />
           </div>
           <figure className="cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
-            <div className="relative h-56 w-full sm:-mt-16">
+            <div className="relative h-96 w-full">
               <Image
                 className="rounded-lg"
                 src="/media/jelvenydepo/8.webp"
@@ -150,7 +163,7 @@ const Products = () => {
               <p>Alkatrészek</p>
             </figcaption>
           </figure>
-          <div className="relative h-40 w-full cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
+          <div className="relative h-96 w-full cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
             <Image
               className="rounded-lg"
               src="/media/jelvenydepo/9.webp"
@@ -161,7 +174,7 @@ const Products = () => {
               }}
             />
           </div>
-        </div>
+        </Carousel>
       </div>
     </section>
   );

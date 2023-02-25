@@ -77,7 +77,8 @@ export default function Hero() {
               Termékeink
             </a>
           </div>
-          <div className="hidden lg:col-span-5 lg:mt-0 lg:flex">
+          <div className="col-span-1"></div>
+          <div className="hidden p-5 lg:col-span-4 lg:flex">
             <img src="/logo-01.svg" alt="mockup" />
           </div>
         </div>
