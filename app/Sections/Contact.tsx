@@ -46,7 +46,7 @@ const Contact = () => {
             </ul>
           </Card>
 
-          <Card horizontal={true} className="leading-3">
+          <Card horizontal={true}>
             <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
               Felkeltettük érdeklődésedet?
             </h5>
