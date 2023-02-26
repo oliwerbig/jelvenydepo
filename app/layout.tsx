@@ -1,7 +1,7 @@
 import { Comfortaa, Inter } from "@next/font/google";
 import "./globals.css";
-import Footer from "./Sections/Footer";
-import Navbar from "./Sections/Navbar";
+import Footer from "./Sections/FooterBar";
+import NavigationBar from "./Sections/NavigationBar";
 
 const comfortaa = Comfortaa({
   subsets: ["latin-ext"],
@@ -31,7 +31,7 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <Navbar />
+        <NavigationBar />
         {children}
         <Footer />
       </body>

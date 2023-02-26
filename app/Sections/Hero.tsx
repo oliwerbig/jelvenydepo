@@ -1,3 +1,7 @@
+"use client";
+
+import { Button } from "flowbite-react";
+
 export default function Hero() {
   return (
     <div className="isolate bg-white">
@@ -29,13 +33,13 @@ export default function Hero() {
         </svg>
       </div>
       <section
-        className="py-12 px-8 shadow-xl shadow-gray-200 dark:bg-gray-900 lg:py-16 lg:px-20"
+        className="py-12 px-8 shadow-xl shadow-gray-200 dark:bg-gray-900 dark:shadow-gray-900 lg:py-16 lg:px-20"
         id="hero"
       >
         <div className="mx-auto grid max-w-7xl grid-cols-12">
           <div className="col-span-12 lg:col-span-7">
             <div className="hidden lg:mb-8 lg:flex lg:justify-start">
-              <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+              <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-slate-100/10 dark:hover:ring-slate-100/20">
                 <span className="flex items-center justify-center gap-2 text-gray-600">
                   <div className="h-[1rem] w-[1.5rem] rounded bg-[linear-gradient(180deg,_#C8102E_33.333%,_#FFF_33.333%_66.666%,_#00843E_66.666%)]"></div>
                   Magyar gyártású, magyar méretekben, magyar alapanyagokból{" "}
@@ -52,30 +56,26 @@ export default function Hero() {
             <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
               Saját gyártású kitűző-, jelvényalkatrészek, tűk, szerszámok
             </p>
-            <a
-              href="#order"
-              className="mr-3 inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-3 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-            >
-              Rendelés
-              <svg
-                className="ml-2 -mr-1 h-5 w-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </a>
-            <a
-              href="#products"
-              className="inline-flex items-center justify-center rounded-lg border border-gray-300 px-5 py-3 text-center text-base font-medium text-gray-900 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-            >
-              Termékeink
-            </a>
+            <div className="flex flex-wrap items-center gap-2">
+              <Button href="#products" color="light" size="xl">
+                Termékeink
+              </Button>
+              <Button href="#order" gradientDuoTone="cyanToBlue" size="xl">
+                Rendelés
+                <svg
+                  className="ml-2 -mr-1 h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </Button>
+            </div>
           </div>
           <div className="col-span-1"></div>
           <div className="hidden p-5 lg:col-span-4 lg:flex">

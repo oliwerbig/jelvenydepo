@@ -1,12 +1,14 @@
 "use client";
 
+import { Button } from "flowbite-react";
 import Image from "next/image";
-import { useParallax } from "react-scroll-parallax";
 import OrderForm from "../OrderForm";
+import ParallaxVideo from "../ParallaxVideo";
 
 const Order = () => {
   return (
-    <section id="order" className="bg-slate-100 bg-opacity-50">
+    <section id="order" className="bg-slate-100/50 dark:bg-gray-800/50">
+      <ParallaxVideo />
       <div className="mx-auto max-w-7xl py-8 px-6">
         <div className="relative isolate overflow-hidden rounded-3xl bg-gray-900 px-6 pt-16 shadow-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           <svg
@@ -54,19 +56,19 @@ const Order = () => {
               </span>
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <a
-                href="#prices"
-                className="rounded-md bg-white px-3.5 py-1.5 text-base font-semibold leading-7 text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
+              <Button href="#prices" outline color="gray">
                 Árlista <span aria-hidden="true">→</span>
-              </a>
+              </Button>
               <a
                 href="#products"
-                className="text-base font-semibold leading-7 text-white"
+                className="text-base font-semibold leading-7 text-white hover:text-slate-200"
               >
                 Termékeink
               </a>
-              <a href="#contact" className="text-base leading-7 text-white">
+              <a
+                href="#contact"
+                className="text-base font-semibold leading-7 text-white hover:text-slate-200"
+              >
                 Csak kérdésed van?
               </a>
             </div>
