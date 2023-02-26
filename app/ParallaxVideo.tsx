@@ -5,7 +5,7 @@ import { useParallax } from "react-scroll-parallax";
 import { useWindowSize } from "usehooks-ts";
 
 interface Props {
-  className: string;
+  className?: string;
   [key: string]: any;
 }
 const ParallaxVideo = ({ className, ...rest }: Props) => {
