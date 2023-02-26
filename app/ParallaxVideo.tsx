@@ -5,24 +5,25 @@ import { useParallax } from "react-scroll-parallax";
 import { useWindowSize } from "usehooks-ts";
 
 interface Props {
+  zIndex?: number;
   className?: string;
   [key: string]: any;
 }
-const ParallaxVideo = ({ className, ...rest }: Props) => {
+const ParallaxVideo = ({ zIndex, className, ...rest }: Props) => {
   const windowSize = useWindowSize();
 
   const parallax = useParallax({
-    speed: windowSize.width >= 1024 ? -100000 : 0,
+    speed: windowSize.width >= 1024 ? -1000 : -100000,
   });
 
   return (
     <div
       {...rest}
       ref={parallax.ref as React.RefObject<HTMLDivElement>}
-      className={`relative -z-10 -mb-[100vh] flex h-screen items-center justify-center overflow-hidden ${className}`}
+      className={`relative -z-10 z-[${zIndex}] -mb-[100vh] flex h-screen items-center justify-center overflow-hidden ${className}`}
     >
       <video
-        className="absolute -z-10 min-h-full w-auto min-w-full max-w-none"
+        className={`absolute min-h-full w-auto min-w-full max-w-none`}
         controls
         autoPlay
         muted

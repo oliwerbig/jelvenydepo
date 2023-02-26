@@ -10,7 +10,7 @@ const Products = () => {
       id="products"
       className="bg-slate-100 bg-opacity-80 dark:bg-gray-900/50"
     >
-      <ParallaxVideo className="-z-11" />
+      <ParallaxVideo zIndex={-10} />
       <div className="mx-auto max-w-7xl items-center gap-16 py-12 px-8 lg:py-16 lg:px-20 xl:grid xl:grid-cols-2">
         <div className="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">

@@ -8,7 +8,7 @@ import ParallaxVideo from "../ParallaxVideo";
 const Order = () => {
   return (
     <section id="order" className="bg-slate-100/50 dark:bg-gray-800/50">
-      <ParallaxVideo />
+      <ParallaxVideo zIndex={-11} />
       <div className="mx-auto max-w-7xl py-8 px-6">
         <div className="relative isolate overflow-hidden rounded-3xl bg-gray-900 px-6 pt-16 shadow-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           <svg
