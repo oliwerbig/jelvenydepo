@@ -8,7 +8,7 @@ const Products = () => {
   return (
     <section
       id="products"
-      className="bg-slate-100 bg-opacity-80 dark:bg-gray-900/50"
+      className="bg-slate-100 bg-opacity-80 dark:bg-gray-900/75"
     >
       <ParallaxVideo zIndex={-10} />
       <div className="mx-auto max-w-7xl items-center gap-16 py-12 px-8 lg:py-16 lg:px-20 xl:grid xl:grid-cols-2">

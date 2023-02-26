@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useParallax } from "react-scroll-parallax";
-import { useWindowSize } from "usehooks-ts";
 
 interface Props {
   zIndex?: number;
@@ -10,10 +9,8 @@ interface Props {
   [key: string]: any;
 }
 const ParallaxVideo = ({ zIndex, className, ...rest }: Props) => {
-  const windowSize = useWindowSize();
-
   const parallax = useParallax({
-    speed: windowSize.width >= 1024 ? -1000 : -100000,
+    speed: -100000,
   });
 
   return (
