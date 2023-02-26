@@ -12,7 +12,7 @@ const ParallaxVideo = ({ className, ...rest }: Props) => {
   const windowSize = useWindowSize();
 
   const parallax = useParallax({
-    speed: windowSize.width >= 1024 ? -1000 : 0,
+    speed: windowSize.width >= 1024 ? -100000 : 0,
   });
 
   return (

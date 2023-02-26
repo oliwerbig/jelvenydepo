@@ -27,39 +27,41 @@ const Products = () => {
             <br />
             Köralakú kitűzőalapok elérhetőek:
             <br />
-            <div className="flex gap-2">
-              <Badge color="info" size="sm">
-                26mm
-              </Badge>
-              <Badge color="info" size="sm">
-                32mm
-              </Badge>
-              <Badge color="info" size="sm">
-                40mm
-              </Badge>
-              <Badge color="info" size="sm">
-                55mm
-              </Badge>
-              <Badge color="info" size="sm">
-                70mm
-              </Badge>
-            </div>
+          </p>
+          <div className="flex gap-2">
+            <Badge color="info" size="sm">
+              26mm
+            </Badge>
+            <Badge color="info" size="sm">
+              32mm
+            </Badge>
+            <Badge color="info" size="sm">
+              40mm
+            </Badge>
+            <Badge color="info" size="sm">
+              55mm
+            </Badge>
+            <Badge color="info" size="sm">
+              70mm
+            </Badge>
+          </div>
+          <p>
             <br />
             Téglalap kitűzőalapok elérhetőek:
             <br />
-            <div className="flex gap-2">
-              <Badge color="info" size="sm" className="mr-2 w-fit">
-                40x28mm
-              </Badge>
-              <Badge color="info" size="sm" className="mr-2 w-fit">
-                55x38mm
-              </Badge>
-              <Badge color="info" size="sm" className="mr-2 w-fit">
-                35x35mm
-              </Badge>
-            </div>
           </p>
-          <div className="flex flex-row gap-2 py-20">
+          <div className="flex gap-2">
+            <Badge color="info" size="sm" className="mr-2 w-fit">
+              40x28mm
+            </Badge>
+            <Badge color="info" size="sm" className="mr-2 w-fit">
+              55x38mm
+            </Badge>
+            <Badge color="info" size="sm" className="mr-2 w-fit">
+              35x35mm
+            </Badge>
+          </div>
+          <div className="flex flex-row gap-2 pt-20 pb-2">
             <Button color="light" href="#prices">
               Árlista
             </Button>
@@ -68,7 +70,7 @@ const Products = () => {
             </Button>
           </div>
         </div>
-        <Carousel className="mt-10 lg:mt-0">
+        <Carousel className="mt-10 xl:mt-0">
           <figure className="cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
             <div className="relative h-96 w-full">
               <Image
