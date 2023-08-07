@@ -7,7 +7,7 @@ const FooterBar = () => {
   return (
     <>
       <Footer container={true}>
-        <div className="w-full">
+        <div className="mx-auto w-[70%]">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
             <div>
               <Footer.Brand href="/" src="/logo-05.svg" alt="Logo" />
