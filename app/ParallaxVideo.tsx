@@ -16,18 +16,17 @@ const ParallaxVideo = ({ zIndex, className, ...rest }: Props) => {
 
   const onPlayerReady: YouTubeProps["onReady"] = (event) => {
     // access to player in all event handlers via event.target
-    event.target.pauseVideo();
+    event.target.playVideo();
   };
 
   const opts: YouTubeProps["opts"] = {
-    height: "390",
-    width: "640",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
       loop: 1,
-      muted: 1,
+      mute: 1,
       controls: 0,
+      enablejsapi: 1,
     },
   };
 
@@ -37,13 +36,13 @@ const ParallaxVideo = ({ zIndex, className, ...rest }: Props) => {
       ref={parallax.ref as React.RefObject<HTMLDivElement>}
       className={`relative -z-10 z-[${zIndex}] -mb-[100vh] flex h-screen items-center justify-center overflow-hidden ${className}`}
     >
-      <div className={`absolute min-h-full w-auto min-w-full max-w-none`}>
-        <YouTube
-          videoId="h-BzKPqOv9g"
-          opts={opts}
-          onReady={onPlayerReady}
-        ></YouTube>
-      </div>
+      <YouTube
+        className={`absolute min-h-full w-auto min-w-full max-w-none`}
+        iframeClassName={`absolute min-h-full w-auto min-w-full max-w-none`}
+        videoId="h-BzKPqOv9g"
+        opts={opts}
+        onReady={onPlayerReady}
+      ></YouTube>
     </div>
   );
 };
