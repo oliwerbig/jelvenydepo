@@ -51,7 +51,7 @@ const Prices = () => {
                 </Table.Row>
                 <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
                   <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-                    40mm kör szalagos kitűző
+                    40mm kör szalagos
                   </Table.Cell>
                   <Table.Cell>1 db kész szalagos kitűző</Table.Cell>
                   <Table.Cell>450ft</Table.Cell>

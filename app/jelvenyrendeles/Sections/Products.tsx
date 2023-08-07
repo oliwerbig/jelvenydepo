@@ -45,7 +45,7 @@ const Products = () => {
             Köralakú kitűzők elérhetőek:
             <br />
           </p>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <Badge color="failure" size="sm">
               26mm
             </Badge>
@@ -67,7 +67,7 @@ const Products = () => {
             Téglalap kitűzők elérhetőek:
             <br />
           </p>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <Badge color="failure" size="sm" className="mr-2 w-fit">
               40x28mm
             </Badge>
@@ -90,7 +90,7 @@ const Products = () => {
       </div>
       <div className="mx-auto max-w-7xl items-center gap-16 py-12 px-8 lg:py-16 lg:px-20 xl:grid xl:grid-cols-2">
         <div className="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
-          <h2 className="mb-4 flex gap-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+          <h2 className="mb-4 flex items-center gap-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             Szalagos kitűzők{" "}
             <span className="font-large mr-2 rounded-full border border-yellow-300 bg-yellow-100 px-5  py-2.5 text-xs text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">
               Új!
