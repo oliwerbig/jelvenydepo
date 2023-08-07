@@ -6,17 +6,19 @@ import { theme } from "./FlowbiteTheme";
 import About from "./Sections/About";
 import Contact from "./Sections/Contact";
 import Hero from "./Sections/Hero";
+import Kituzok from "./Sections/Kituzok";
 import Order from "./Sections/Order";
 import Prices from "./Sections/Prices";
-import Products from "./Sections/Products";
+import Szalagos from "./Sections/Szalagos";
 
 export default function Home() {
   return (
     <Providers>
       <Flowbite theme={{ theme: theme }}>
         <Hero />
-        <Products />
+        <Szalagos />
         <About />
+        <Kituzok />
         <Prices />
         <Order />
         <Contact />
