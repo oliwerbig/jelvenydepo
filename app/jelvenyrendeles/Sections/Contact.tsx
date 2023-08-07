@@ -17,12 +17,25 @@ const Contact = () => {
               Szabó Tibor
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
-              Többszöri triatlonos,
+              Villamosúzemmérnök,
               <br />
-              villamosüzemmérnök
+              cégvezető
               <br />
               <br />
-              <span>Ő vezeti a céget</span>
+              +36 20 371 0680
+            </p>
+          </Card>
+          <Card horizontal={true} imgSrc="/media/ildi.jpg">
+            <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Nagy Ildikó
+            </h5>
+            <p className="font-normal text-gray-700 dark:text-gray-400">
+              Ügyintéző,
+              <br />
+              kapcsolattartó
+              <br />
+              <br />
+              +36 30 382 9773
             </p>
           </Card>
 

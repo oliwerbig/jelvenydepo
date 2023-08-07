@@ -26,7 +26,7 @@ const Prices = () => {
                     26mm kör
                   </Table.Cell>
                   <Table.Cell>1 db kész kitűző</Table.Cell>
-                  <Table.Cell>235ft</Table.Cell>
+                  <Table.Cell>-</Table.Cell>
                 </Table.Row>
                 <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
                   <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
@@ -69,10 +69,10 @@ const Prices = () => {
               <Table.Body>
                 <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
                   <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-                    35x35mm téglalap
+                    35x35mm négyzet
                   </Table.Cell>
                   <Table.Cell>1 db kész kitűző</Table.Cell>
-                  <Table.Cell>235ft</Table.Cell>
+                  <Table.Cell>-</Table.Cell>
                 </Table.Row>
                 <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
                   <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
