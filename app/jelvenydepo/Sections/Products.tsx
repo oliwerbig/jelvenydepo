@@ -13,7 +13,7 @@ const Products = () => {
       <ParallaxVideo zIndex={-10} />
       <div className="mx-auto max-w-7xl items-center gap-16 py-12 px-8 lg:py-16 lg:px-20 xl:grid xl:grid-cols-2">
         <Carousel className="mt-10 xl:mt-0">
-          <figure className="cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0">
+          <figure className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0">
             <div className="relative h-96 w-full">
               <Image
                 className="rounded-lg"

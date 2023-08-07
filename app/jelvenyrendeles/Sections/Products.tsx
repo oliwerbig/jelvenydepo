@@ -17,7 +17,7 @@ const Products = () => {
           {badgeImages.map((imageId) => (
             <figure
               key={imageId}
-              className="cursor-pointer grayscale filter transition-all duration-300 hover:grayscale-0"
+              className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
             >
               <div className="relative h-96 w-full">
                 <Image
@@ -101,25 +101,19 @@ const Products = () => {
             az iskola neve, a névadó arcképe, vagy az iskola logója. A szalag
             anyaga selyem szatén. A szalag szélessége 15 mm. A jelvényből kilógó
             szalag hossza 7.5 cm. <br></br>
-            <br></br>A jelvénybe bepréselem a szalagot. A szalagokból széles
-            színválasztékot kínálok. A sötét színű szalagokon az évszám arany
-            vagy ezüst színű nyomattal készül. A többi szalagon barna vagy
-            fekete a nyomtatás színe. A fehér színű szalagra bármilyen színű
-            szám nyomtatása lehetséges. <br></br>
+            <br></br>A jelvénybe bepréseljük a szalagot. A szalagokból széles
+            színválasztékot kínálunk. <br></br>
             <br></br>A szalag minták mellett látható szám az egyértelmű szín
-            megjelölésére szolgál. Kérésem, hogy megrendeléskor a kiválasztott
+            megjelölésére szolgál. Kérésünk, hogy megrendeléskor a kiválasztott
             szalag mellett látható számot írja meg, így elkerülhető, hogy más
             színárnyalatot kapjon. Szalag vége le van hegesztve, így nem
             rojtolódik.<br></br>
             <br></br> A szalagavató jelvény ára 450 Ft/db. Az ár nem tartalmazza
             az áfá-t. Más költség, felár nincs. <br></br>
-            <br></br>Minden egyedi kérést igyekszek megvalósítani a technikai
-            lehetőségek függvényében és ezekér nem kérek felárat, szerkesztési
-            díjat. <br></br>
-            <br></br>Ha átutalással kéri a fizetést, kérem, hogy megrendeléskor
+            <br></br>Ha átutalással kéri a fizetést, kérjük, hogy megrendeléskor
             ezt előre jelezze és adja meg a számlázási címet, minden más esetben
             az iskola nevére állítom ki a számlát. Előleget nem kérek.<br></br>
-            <br></br> Köszönöm a figyelmét.
+            <br></br> Köszönjük a figyelmét.
           </p>
           <div className="flex flex-row gap-2 pt-10 pb-2">
             <Button color="light" href="#prices">
