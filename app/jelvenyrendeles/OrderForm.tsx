@@ -10,21 +10,11 @@ const OrderForm = (props: React.PropsWithChildren<any>) => {
     >
       <div>
         <Label htmlFor="email" value="Email címed" />
-        <TextInput
-          type="email"
-          id="email"
-          placeholder="name@gmail.com"
-          required
-        />
+        <TextInput type="email" id="email" placeholder="" required />
       </div>
       <div>
         <Label htmlFor="phone" value="Telefonszámod" />
-        <TextInput
-          type="text"
-          id="phone"
-          placeholder="+36 20 0680 371"
-          required
-        />
+        <TextInput type="text" id="phone" placeholder="" required />
       </div>
       <div className="sm:col-span-2">
         <Label htmlFor="message" value="Rendelésed tartalma" />
