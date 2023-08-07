@@ -9,7 +9,7 @@ const FooterBar = () => {
       <Footer container={true}>
         <div className="mx-auto w-[70vw]">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-            <div>
+            <div className="px-5">
               <Footer.Brand href="/" src="/logo-05.svg" alt="Logo" />
             </div>
             <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
@@ -26,11 +26,13 @@ const FooterBar = () => {
               <div>
                 <Footer.Title title="Elérhetőség" />
                 <p>
-                  Szabó Tibor - Ügyvezető
-                  <br />
-                  <br />
-                  jelvenydepo@gmail.com <br />
+                  Szabó Tibor - Cégvezető jelvenydepo@gmail.com <br />
                   +36203710680
+                  <br />
+                  <br />
+                  Nagy Ildikó - Ügyintéző <br />
+                  +36 30 382 9773
+                  <br />
                 </p>
               </div>
               <div>
