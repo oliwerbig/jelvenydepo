@@ -4,7 +4,7 @@ import { range } from "@/app/range";
 import { Badge, Button, Carousel } from "flowbite-react";
 import Image from "next/image";
 const Products = () => {
-  const badgeImages = range(10, 1);
+  const badgeImages = range(12, 1);
   const szalagosImages = range(12, 1);
   const szalagokImages = ["1", "2", "4", "5", "6", "8", "11", "14", "15"];
 
