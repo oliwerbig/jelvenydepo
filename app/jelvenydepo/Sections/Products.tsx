@@ -2,7 +2,7 @@
 
 import { Badge, Button, Carousel } from "flowbite-react";
 import Image from "next/image";
-import ParallaxVideo from "../ParallaxVideo";
+import ParallaxVideo from "../../ParallaxVideo";
 
 const Products = () => {
   return (

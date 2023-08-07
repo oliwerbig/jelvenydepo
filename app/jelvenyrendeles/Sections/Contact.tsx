@@ -2,7 +2,7 @@
 
 import { Button, Card } from "flowbite-react";
 import Image from "next/image";
-import ContactForm from "../ContactForm";
+import ContactForm from "../../ContactForm";
 
 const Contact = () => {
   return (
@@ -19,7 +19,8 @@ const Contact = () => {
             <p className="font-normal text-gray-700 dark:text-gray-400">
               Többszöri triatlonos,
               <br />
-              mindig segítőkész, <br />
+              villamosüzemmérnök
+              <br />
               <br />
               <span>Ő vezeti a céget</span>
             </p>

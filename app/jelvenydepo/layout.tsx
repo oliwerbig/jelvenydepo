@@ -1,5 +1,5 @@
 import { Comfortaa, Inter } from "@next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Footer from "./Sections/FooterBar";
 import NavigationBar from "./Sections/NavigationBar";
 

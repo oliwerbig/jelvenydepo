@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Jelvénydepo kft.</title>
+      <title>Jelvénydepo - Jelvénydepo kft.</title>
       <link
         rel="apple-touch-icon"
         sizes="180x180"
