@@ -6,6 +6,7 @@ import Image from "next/image";
 const Products = () => {
   const badgeImages = range(10, 1);
   const szalagosImages = range(12, 1);
+  const szalagokImages = ["1", "2", "4", "5", "6", "8", "11", "14", "15"];
 
   return (
     <section
@@ -124,7 +125,7 @@ const Products = () => {
             </Button>
           </div>
         </div>{" "}
-        <Carousel className="mt-10 h-[100vh] xl:mt-0">
+        <Carousel className="mt-10 xl:mt-0">
           {szalagosImages.map((imageId) => (
             <figure
               key={imageId}
@@ -149,6 +150,35 @@ const Products = () => {
           ))}
         </Carousel>
       </div>
+      <Carousel className="mx-auto mt-10 h-[20rem] w-[60%] xl:mt-0">
+        {szalagokImages.map((imageId) => (
+          <>
+            <p className="absolute top-[6rem] left-[1rem] z-[99] m-0 p-0 text-3xl text-white">
+              Szalag {imageId}
+            </p>
+            <figure
+              key={imageId}
+              className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
+            >
+              <div className="relative h-96 w-full">
+                <Image
+                  className="rounded-lg"
+                  src={`/media/jelvenyrendeles/products/szalagok_${imageId}.png`}
+                  alt=""
+                  fill
+                  sizes="100%"
+                  style={{
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
+              <figcaption className="text-md absolute bottom-6 w-full px-4 text-center text-white">
+                <p>Szalag {imageId}</p>
+              </figcaption>
+            </figure>
+          </>
+        ))}
+      </Carousel>
     </section>
   );
 };
