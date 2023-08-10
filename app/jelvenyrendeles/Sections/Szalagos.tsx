@@ -49,60 +49,59 @@ const Szalagos = () => {
             </Button>
           </div>
         </div>{" "}
-        <Carousel className="mt-10 xl:mt-0">
-          {szalagosImages.map((imageId) => (
-            <figure
-              key={imageId}
-              className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
-            >
-              <div className="relative h-[50rem] w-full">
-                <Image
-                  className="rounded-lg"
-                  src={`/media/jelvenyrendeles/products/szalagos (${imageId}).jpg`}
-                  alt=""
-                  fill
-                  sizes="100%"
-                  style={{
-                    objectFit: "contain",
-                  }}
-                />
-              </div>
-              <figcaption className="text-md absolute bottom-6 w-full px-4 text-center text-white">
-                <p></p>
-              </figcaption>
-            </figure>
-          ))}
-        </Carousel>
+        <div className="flex flex-col">
+          <Carousel className="mt-10 h-[50rem] xl:mt-0">
+            {szalagosImages.map((imageId) => (
+              <figure
+                key={imageId}
+                className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
+              >
+                <div className="relative h-[50rem] w-full">
+                  <Image
+                    className="rounded-lg"
+                    src={`/media/jelvenyrendeles/products/szalagos (${imageId}).jpg`}
+                    alt=""
+                    fill
+                    sizes="100%"
+                    style={{
+                      objectFit: "contain",
+                    }}
+                  />
+                </div>
+                <figcaption className="text-md absolute bottom-6 w-full px-4 text-center text-white">
+                  <p></p>
+                </figcaption>
+              </figure>
+            ))}
+          </Carousel>
+          <Carousel className="mx-auto mt-10 w-[60%] xl:mt-0">
+            {szalagokImages.map((imageId) => (
+              <>
+                <figure
+                  key={imageId}
+                  className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
+                >
+                  <div className="relative h-20 w-full">
+                    <Image
+                      className="rounded-lg"
+                      src={`/media/jelvenyrendeles/products/szalagok_${imageId}.png`}
+                      alt=""
+                      fill
+                      sizes="100%"
+                      style={{
+                        objectFit: "contain",
+                      }}
+                    />
+                  </div>
+                  <figcaption className="text-md absolute bottom-6 w-full pt-2 pl-40 pr-2 text-center text-2xl text-black">
+                    <p>{imageId}</p>
+                  </figcaption>
+                </figure>
+              </>
+            ))}
+          </Carousel>
+        </div>
       </div>
-      <Carousel className="mx-auto mt-10 h-[20rem] w-[60%] xl:mt-0">
-        {szalagokImages.map((imageId) => (
-          <>
-            <p className="absolute top-[6rem] left-[1rem] z-[99] m-0 p-0 text-3xl text-white">
-              Szalag {imageId}
-            </p>
-            <figure
-              key={imageId}
-              className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
-            >
-              <div className="relative h-96 w-full">
-                <Image
-                  className="rounded-lg"
-                  src={`/media/jelvenyrendeles/products/szalagok_${imageId}.png`}
-                  alt=""
-                  fill
-                  sizes="100%"
-                  style={{
-                    objectFit: "contain",
-                  }}
-                />
-              </div>
-              <figcaption className="text-md absolute bottom-6 w-full px-4 text-center text-white">
-                <p>Szalag {imageId}</p>
-              </figcaption>
-            </figure>
-          </>
-        ))}
-      </Carousel>
     </section>
   );
 };
