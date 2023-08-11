@@ -49,14 +49,14 @@ const Szalagos = () => {
             </Button>
           </div>
         </div>{" "}
-        <div className="flex flex-col">
-          <Carousel className="mx-auto mt-10 h-[50rem] xl:mt-0">
+        <div className="flex h-full flex-col items-start">
+          <Carousel className="mx-auto mt-10 h-[30rem] xl:mt-0">
             {szalagosImages.map((imageId) => (
               <figure
                 key={imageId}
                 className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
               >
-                <div className="relative h-[50rem] w-full">
+                <div className="relative h-[20rem] w-full">
                   <Image
                     className="rounded-lg"
                     src={`/media/jelvenyrendeles/products/szalagos (${imageId}).jpg`}
