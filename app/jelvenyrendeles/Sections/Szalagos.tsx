@@ -50,41 +50,47 @@ const Szalagos = () => {
           </div>
         </div>{" "}
         <div className="flex h-full flex-col items-start">
-          <Carousel className="mx-auto mt-10 h-[30rem] xl:mt-0">
-            {szalagosImages.map((imageId) => (
-              <figure
-                key={imageId}
-                className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
-              >
-                <div className="relative h-[20rem] w-full">
-                  <Image
-                    className="rounded-lg"
-                    src={`/media/jelvenyrendeles/products/szalagos (${imageId}).jpg`}
-                    alt=""
-                    fill
-                    sizes="100%"
-                    style={{
-                      objectFit: "contain",
-                    }}
-                  />
-                </div>
-                <figcaption className="text-md absolute bottom-6 w-full px-4 text-center text-white">
-                  <p></p>
-                </figcaption>
-              </figure>
-            ))}
-          </Carousel>
-          <Carousel className="mx-auto mt-10 xl:mt-0">
-            {szalagokImages.map((imageId) => (
-              <>
+          <table className="w-full">
+            <tbody>
+              {szalagokImages.map((imageId) => (
+                <tr key={imageId}>
+                  <td>
+                    <figure
+                      key={imageId}
+                      className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
+                    >
+                      <div className="relative h-20 w-full">
+                        <Image
+                          className="rounded-lg"
+                          src={`/media/jelvenyrendeles/products/szalagok_${imageId}.png`}
+                          alt=""
+                          fill
+                          sizes="100%"
+                          style={{
+                            objectFit: "cover",
+                          }}
+                        />
+                      </div>
+                      <figcaption className="text-md absolute left-[-42%] bottom-6 w-full pt-2 pr-2 text-center text-2xl text-black">
+                        <p>{imageId}</p>
+                      </figcaption>
+                    </figure>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <div className="w-full">
+            <Carousel className="mx-auto h-[30rem] xl:mt-0">
+              {szalagosImages.map((imageId) => (
                 <figure
                   key={imageId}
                   className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
                 >
-                  <div className="relative h-20 w-full">
+                  <div className="relative h-[20rem] w-full">
                     <Image
                       className="rounded-lg"
-                      src={`/media/jelvenyrendeles/products/szalagok_${imageId}.png`}
+                      src={`/media/jelvenyrendeles/products/szalagos (${imageId}).jpg`}
                       alt=""
                       fill
                       sizes="100%"
@@ -93,13 +99,13 @@ const Szalagos = () => {
                       }}
                     />
                   </div>
-                  <figcaption className="text-md absolute bottom-6 w-full pt-2 pl-40 pr-2 text-center text-2xl text-black">
-                    <p>{imageId}</p>
+                  <figcaption className="text-md absolute bottom-6 w-full px-4 text-center text-white">
+                    <p></p>
                   </figcaption>
                 </figure>
-              </>
-            ))}
-          </Carousel>
+              ))}
+            </Carousel>
+          </div>
         </div>
       </div>
     </section>
