@@ -50,7 +50,7 @@ const Szalagos = () => {
           </div>
         </div>{" "}
         <div className="flex flex-col">
-          <Carousel className="mt-10 h-[50rem] xl:mt-0">
+          <Carousel className="mx-auto mt-10 h-[50rem] xl:mt-0">
             {szalagosImages.map((imageId) => (
               <figure
                 key={imageId}
@@ -74,7 +74,7 @@ const Szalagos = () => {
               </figure>
             ))}
           </Carousel>
-          <Carousel className="mx-auto mt-10 w-[60%] xl:mt-0">
+          <Carousel className="mx-auto mt-10 xl:mt-0">
             {szalagokImages.map((imageId) => (
               <>
                 <figure
