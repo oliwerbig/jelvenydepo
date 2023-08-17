@@ -3,7 +3,6 @@
 import { Button } from "flowbite-react/lib/esm/components/Button";
 import { Navbar } from "flowbite-react/lib/esm/components/Navbar";
 import Image from "next/image";
-import React from "react";
 
 const NavigationBar = () => {
   return (
@@ -21,7 +20,7 @@ const NavigationBar = () => {
           <Button gradientDuoTone="pinkToOrange" href="#order">
             Rendelj most!
           </Button>
-          <Navbar.Toggle />
+          <Navbar.Toggle></Navbar.Toggle>
         </div>
         <Navbar.Collapse>
           <Navbar.Link href="#products">Termékeink</Navbar.Link>

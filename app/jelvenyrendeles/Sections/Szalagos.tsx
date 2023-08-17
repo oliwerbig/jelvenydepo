@@ -80,32 +80,32 @@ const Szalagos = () => {
               ))}
             </tbody>
           </table>
-          <div className="w-full">
-            <Carousel className="mx-auto h-[30rem] xl:mt-0">
-              {szalagosImages.map((imageId) => (
-                <figure
-                  key={imageId}
-                  className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
-                >
-                  <div className="relative h-[20rem] w-full">
-                    <Image
-                      className="rounded-lg"
-                      src={`/media/jelvenyrendeles/products/szalagos (${imageId}).jpg`}
-                      alt=""
-                      fill
-                      sizes="100%"
-                      style={{
-                        objectFit: "contain",
-                      }}
-                    />
-                  </div>
-                  <figcaption className="text-md absolute bottom-6 w-full px-4 text-center text-white">
-                    <p></p>
-                  </figcaption>
-                </figure>
-              ))}
-            </Carousel>
-          </div>
+        </div>
+      </div>
+      <div className="mx-auto max-w-6xl ">
+        <div className="grid w-full grid-cols-6 ">
+          {szalagosImages.map((imageId) => (
+            <figure
+              key={imageId}
+              className="cursor-pointer grayscale-[25%] filter transition-all duration-300 hover:grayscale-0"
+            >
+              <div className="relative h-[20rem] w-[10rem]">
+                <Image
+                  className="rounded-lg"
+                  src={`/media/jelvenyrendeles/products/szalagos (${imageId}).jpg`}
+                  alt=""
+                  fill
+                  sizes="100%"
+                  style={{
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
+              <figcaption className="text-md absolute bottom-6 w-full px-4 text-center text-white">
+                <p></p>
+              </figcaption>
+            </figure>
+          ))}
         </div>
       </div>
     </section>
