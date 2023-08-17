@@ -11,7 +11,12 @@ export async function POST(request: Request) {
     from: "info@jelvenydepo.hu",
     replyTo: email,
     templateId: "d-9980c208663844af8eb5044bf2d97e9e",
-    customArgs: { name: name, email: email, pgone: phone, message: message },
+    dynamicTemplateData: {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    },
   } as MailDataRequired;
 
   try {

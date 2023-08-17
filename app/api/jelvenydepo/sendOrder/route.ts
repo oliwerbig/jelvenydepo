@@ -9,9 +9,14 @@ export async function POST(request: Request) {
   const msg = {
     to: "oliver.emanuel.nagy@gmail.com",
     from: "info@jelvenydepo.hu",
-    replyTo: email,
     templateId: "d-db8eee4afad241358559b1a059ec7dfc",
-    customArgs: { name: name, email: email, pgone: phone, message: message },
+    replyTo: email,
+    dynamicTemplateData: {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    },
   } as MailDataRequired;
 
   try {
