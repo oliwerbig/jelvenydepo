@@ -10,6 +10,8 @@ import Kituzok from "./Sections/Kituzok";
 import Order from "./Sections/Order";
 import Prices from "./Sections/Prices";
 import Szalagos from "./Sections/Szalagos";
+import FAQ from "./Sections/FAQ";
+import ASZF from "./Sections/ASZF";
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
         <Kituzok />
         <Prices />
         <Order />
+        <FAQ />
+        <ASZF />
         <Contact />
       </Flowbite>
     </Providers>

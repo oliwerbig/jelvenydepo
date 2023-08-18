@@ -1,4 +1,4 @@
-import { Comfortaa, Inter } from "@next/font/google";
+import { Comfortaa, Inter } from "next/font/google";
 import "./globals.css";
 
 const comfortaa = Comfortaa({
